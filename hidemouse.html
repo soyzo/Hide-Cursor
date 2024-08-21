@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Cursor Example</title>
+    <style>
+        /* Hide cursor when it is over the entire page */
+        body.hide-cursor {
+            cursor: none;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Function to hide cursor
+        function hideCursor() {
+            document.body.classList.add('hide-cursor');
+        }
+
+        // Execute the function when the page loads
+        window.onload = hideCursor;
+    </script>
+</body>
+</html>
